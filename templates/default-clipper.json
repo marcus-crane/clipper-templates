@@ -1,0 +1,46 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Default",
+	"behavior": "create",
+	"noteContentFormat": "![{{schema:name}}]({{url}})",
+	"properties": [
+		{
+			"name": "author",
+			"value": "{{schema:author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "cover",
+			"value": "{{schema:thumbnailUrl|slice:0}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "published",
+			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
+			"type": "date"
+		},
+		{
+			"name": "title",
+			"value": "{{schema:name}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{schema:name}}",
+	"path": "Clippings"
+}

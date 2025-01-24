@@ -1,0 +1,53 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "YouTube",
+	"behavior": "create",
+	"noteContentFormat": "![]({{schema:thumbnailUrl|slice:0}})\n\n## Summary\n\n<!-- output from kagi universal summariser or my own hand written summary -->\n\n## Timestamps\n\n[0.00](): Something notable occurs.",
+	"properties": [
+		{
+			"name": "author",
+			"value": "{{schema:author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "cover",
+			"value": "{{schema:thumbnailUrl|slice:0}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "published",
+			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
+			"type": "date"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "status",
+			"value": "Unwatched",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings videos",
+			"type": "multitext"
+		},
+		{
+			"name": "title",
+			"value": "{{schema:name}}",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.youtube.com/watch?v="
+	],
+	"noteNameFormat": "{{schema:name}}",
+	"path": "Clippings"
+}
