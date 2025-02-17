@@ -20,6 +20,11 @@
 			"type": "date"
 		},
 		{
+			"name": "duration",
+			"value": "{{selector:ytd-player .ytp-time-duration|split:\\\":\\\"|slice:-3,-2|first|replace:\\\"[]\\\":\\\"0\\\"}}h {{selector:ytd-player .ytp-time-duration|split:\\\":\\\"|slice:-2,-1|first}}m",
+			"type": "text"
+		},
+		{
 			"name": "published",
 			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
 			"type": "date"
