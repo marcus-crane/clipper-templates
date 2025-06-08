@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "Default",
 	"behavior": "create",
-	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n{{\"kagi_summarizer_output\"}}",
+	"noteContentFormat": "# {{schema:name}}\n\n![{{schema:name}}]({{url}})\n\n{{\"kagi_summarizer_output\"}}",
 	"properties": [
 		{
 			"name": "author",
