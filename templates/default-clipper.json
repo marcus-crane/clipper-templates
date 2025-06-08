@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "Default",
 	"behavior": "create",
-	"noteContentFormat": "![{{schema:name}}]({{url}})",
+	"noteContentFormat": "![{{schema:name}}]({{url}})\n\n{{\"kagi_summarizer_output\"}}",
 	"properties": [
 		{
 			"name": "author",
@@ -42,5 +42,5 @@
 	],
 	"triggers": [],
 	"noteNameFormat": "{{schema:name}}",
-	"path": "Clippings"
+	"path": "Clippings/Web"
 }

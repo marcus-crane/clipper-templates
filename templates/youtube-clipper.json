@@ -2,7 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "YouTube",
 	"behavior": "create",
-	"noteContentFormat": "![]({{schema:thumbnailUrl|slice:0}})\n\n## Summary\n\n{{\"kagi_summarizer_output\"}}\n\n## Timestamps\n\n[0.00](): Something notable occurs.",
+	"noteContentFormat": "# {{schema:name}}\n\n![]({{schema:thumbnailUrl|slice:0}})\n\n## Summary\n\n{{\"kagi_summarizer_output\"}}\n\n## Timestamps\n\n[0:00](): Something notable occurs.",
 	"properties": [
 		{
 			"name": "author",
@@ -53,7 +53,7 @@
 	"triggers": [
 		"https://www.youtube.com/watch?v="
 	],
-	"noteNameFormat": "{{schema:name}}",
-	"path": "Clippings",
+	"noteNameFormat": "{{schema:name|safe_name}}",
+	"path": "Clippings/Videos",
 	"context": "{{url}}"
 }
