@@ -41,7 +41,7 @@
 		},
 		{
 			"name": "tags",
-			"value": "clippings videos",
+			"value": "clippings,videos",
 			"type": "multitext"
 		},
 		{
